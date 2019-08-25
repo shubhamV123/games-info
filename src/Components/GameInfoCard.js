@@ -5,9 +5,9 @@ const GameInfoCard = ({ data }) => {
 
     let { gameName, completedLogo, name, entryFee, currentPlayers, gameCode, tournamentSource, status, totalPlayers, totalWinnings } = data;
     return (
-        <Col span={8} className="p-1" >
+        <Col xs={24} sm={12} lg={8} md={12} className="p-1" >
             <Card title={name} bordered={false}>
-                <div className="text-center pb-1"> <img src={completedLogo} alt="" /></div>
+                <div className="text-center pb-1" style={{ width: "100%" }}> <img style={{ width: "100%" }} src={completedLogo} alt="" /></div>
                 <Row gutter={16} className="pb-1 ">
                     <Col span={12}>
                         <Statistic title="Game Name" value={gameName} />
